@@ -1,0 +1,11 @@
+<div>
+	<label>{{myColName}}</label>
+	<select ng-show="myType == 'select'" ng-model="myOutputData">
+		 <option ng-repeat="item in myFunctionData()" value="{{item.key}}" >{{item.value}}</option>
+	</select>
+
+	<input ng-show="myType == 'text'" type='text' ng-model="myOutputData">
+
+	<input ng-show="myType == 'autocomplete'" type='text' ng-model='myOutputData'>
+
+</div>
